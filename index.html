@@ -1,0 +1,40 @@
+<!-- *DO NOT CHANGE THIS FILE* -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <title>CC HS23 </title>
+  <meta name="title" content="BA Interaction Design : Creative Coding Portfolio" />
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+</head>
+
+<body>
+   <!-- Student Name -->
+  <section class="header-container">
+    <h2>Name Surname</h2>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects-container">
+  </section>
+
+  <script src="./script/script.js"></script>
+</body>
+<script>
+function openProject() {
+  const projectID = event.target.id;
+  parts = projectID.match(/[a-zA-Z]+|[0-9]+/g);
+  url =`./projects/${parts[0]+parts[1]}/project${parts[2]}/index.html`;
+  window.location.href = url;
+}
+</script>
+</html>
