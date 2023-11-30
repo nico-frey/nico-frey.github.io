@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+button{
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px 16px 32px;
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  background-color: black;
+}
+
